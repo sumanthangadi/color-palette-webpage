@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  
+}
+.wrapper {
+    margin: 70px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.typing-demo {
+    width: 83%;
+    animation: typing 5s steps(56), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+.typing-demo span {
+    font-size: 14px;
+    color: rgba(151, 151, 151, 0.596);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.main {
+    height: 85vh;
+    width: 87vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+h5 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.color {
+    height: 180px;
+    width: 280px;
+    margin-top: 25px;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sono', sans-serif;
+    font-size: 24px;
+}
+
+.color:hover {
+    cursor: pointer
+}
+
+.row-1, .row-2, .row-3, .row-4, .row-5, .row-6, .row-7, .row-8, .row-9, .row-10, .row-11, .row-12 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    margin-bottom: 80px;
+}
+
+.row-12 {
+    width: 38%;
+    justify-content: space-between;
+}
+
+.text {
+    margin-top: 250px;
+}
